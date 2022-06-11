@@ -1,11 +1,43 @@
 <html>
   <head>
-    <meta charset="UTF-8">
     <script src="script.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <script src="funcionalidad.js" type="text/javascript" defer></script>
   </head>
-  <body>
-    <h1>Hello there!</h1>
-    <a href="/me.html">My other page</a>
+  <body onload="init();">
+    <div class="container">
+      <div class="calculadora">
+        <div class="display">
+          <div id="resultado"></div>
+        </div>
+        <button id="siete">7</button>
+        <button id="ocho">8</button>
+
+        <button id="nueve">9</button>
+        <button id="division">/</button>
+
+        <button id="cuatro">4</button>
+        <button id="cinco">5</button>
+        <button id="seis">6</button>
+        <button id="multiplicacion">*</button>
+        <button id="uno">1</button>
+        <button id="dos">2</button>
+        <button id="tres">3</button>
+        <button id="resta">-</button>
+        <button id="igual">=</button>
+        <button id="reset">C</button>
+        <button id="cero">0</button>
+        <button id="suma">+</button>
+      </div>
+    </div>
   </body>
 </html>
